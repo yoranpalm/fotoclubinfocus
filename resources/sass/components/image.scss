@@ -1,0 +1,40 @@
+.image {
+    margin-bottom: 10px;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+a {
+    .image-box {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        width: auto;
+        height: 165px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+
+        .image {
+            img {
+                max-width: 100%;
+                transition: all 0.3s;
+                display: block;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+a:hover .image-box .image img {
+    transform: scale(1.1);
+}
+
+.tag-rating {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    left: 20px;
+    top: 20px;
+}

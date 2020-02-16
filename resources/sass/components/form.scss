@@ -1,0 +1,78 @@
+.input, .search-input, .textarea {
+    border: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    border: 1px solid #44bf91;
+
+    &:focus, 
+    &:hover {
+        border-color: $light-green;
+        box-shadow: 0 0 1px 0.125em rgba(rgb(50, 147, 111), .25);
+    }
+
+    &.is-danger {
+        &:focus,
+        &:hover {
+            border-color: #f14668 !important;
+            box-shadow: 0 0 0 0.125em rgba(241,70,104,.25) !important;
+        }
+    }
+}
+
+.select {
+    width: 100%;
+
+    select {
+        width: 100%;
+        border: 1px solid #44bf91;
+
+        &#cameraId {
+            border-radius: 290486px;
+        }
+
+        &:focus, &:hover {
+            border-color: $light-green;
+            box-shadow: 0 0 1px 0.125em rgba(rgb(50, 147, 111), .25);
+        }
+    }
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: $light-green;
+}
+
+.input-wrapper {
+    display: flex;
+
+    input:first-child {
+        margin-right: 15px;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+.file-name {
+    border-radius: 290486px 0 0 290486px !important;
+}
+
+.file-cta {
+    background-color: #effaf3 !important;
+    color: #257942 !important;
+    border-radius: 0 290486px 290486px 0 !important;
+
+    &:hover {
+        background-color: #e6f7ec !important;
+        border-color: transparent !important;
+        color: #257942 !important;
+    }
+}
+
+#password-strength-status {
+    p {
+        margin-top: 15px;
+    }
+}

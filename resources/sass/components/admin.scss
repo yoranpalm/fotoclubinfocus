@@ -1,0 +1,13 @@
+.validation-wrapper {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    input:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    p {
+        width: 65%;
+    }
+}

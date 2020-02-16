@@ -1,0 +1,17 @@
+.detail-item {
+    margin: 8px 0;
+
+    &:first-child {
+        margin-top: 15px;
+    }
+}
+
+.has-material-icon {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    .material-icons, .material-icons-outlined {
+        float: left;
+        margin-right: 5px;
+    }
+}

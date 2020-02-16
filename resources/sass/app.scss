@@ -1,0 +1,95 @@
+//settings
+@import "settings/colors.scss";
+
+// components
+@import "components/admin.scss";
+@import "components/carousel.scss";
+@import "components/footer.scss";
+@import "components/form.scss";
+@import "components/gallery.scss";
+@import "components/image.scss";
+@import "components/navigation.scss";
+@import "components/profile.scss";
+@import "components/searchbar.scss";
+@import "components/usp.scss";
+
+//elements
+@import "elements/buttons.scss";
+@import "elements/font.scss";
+@import "elements/icons.scss";
+
+.with-circle, .with-circle-small {
+  background-color: #f7f7fd;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 550px;
+    height: 550px;
+    background-image: url("/images/circles-small-group.svg");
+    background-size: 550px 550px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    right: -173px;
+    top: -247px;
+    z-index: 1;
+  }
+}
+
+.with-circle-small {
+  &::before {
+    width: 680px;
+    height: 400px;
+    background-size: 680px 400px;
+    background-position: top left;
+  }
+}
+
+.with-oval::before {
+  bottom: 0;
+  height: 50px;
+  transform: rotate(180deg) translateY(-77.43%);
+}
+
+.oval-bottom {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("/images/oval-purple.svg");
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 110px;
+    z-index: -1;
+    margin: 0 auto;
+    transform: translateY(-77.43%);
+  }
+}
+
+.hero-body, .footer {
+  a {
+    background: linear-gradient(to right, #32936f, #395e66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.content-body {
+  padding: 7rem 1.5rem 3rem 1.5rem;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#app {
+  flex: 1;
+}

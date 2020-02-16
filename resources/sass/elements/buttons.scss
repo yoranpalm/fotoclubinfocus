@@ -1,0 +1,15 @@
+// Inspired by https://codepen.io/pirrera/pen/bqVeGx
+.button-green {
+    background-image: linear-gradient(to right, $light-green, $dark-green);
+    background-size: 130% auto;
+    transition: 0.5s;
+    width: auto;
+    line-height: 0;
+    font-weight: bold;
+    color: white;
+
+    &:hover {
+        color: white;
+        background-position: right center;
+    }
+}

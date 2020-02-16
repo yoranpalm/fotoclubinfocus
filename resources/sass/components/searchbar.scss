@@ -1,0 +1,28 @@
+.searchbar {
+  position: absolute;
+  margin-top: 0;
+  padding: 0;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  p {
+    width: 260px;
+
+    input {
+      background-color: transparent;
+    }
+  }
+}
+
+.search-input {
+  box-shadow: none;
+  border: none;
+  
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 1px 0.125em rgba(rgb(50, 147, 111), .25);
+  }
+}

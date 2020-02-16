@@ -1,0 +1,38 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+        img {
+            border-radius: 50% !important;
+        }
+    }
+
+    div {
+        margin-left: 20px;
+    }
+}
+
+.profile-info {
+    display: flex !important;
+    justify-content: center;
+
+    a {
+        i {
+            color: black;
+        }
+    }
+
+    &._detail {
+        justify-content: space-between;
+    }
+}
+#upload{
+    display: inline-block;
+}
+
+.uploads{
+    display: inline-block;
+    overflow: hidden;
+}
